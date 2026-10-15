@@ -1,0 +1,15 @@
+# Personal data — never commit
+jarvis_log.txt
+undo_organize.json
+.env
+*.env
+
+# Installed packages (recreate with: pip install -r requirements.txt)
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Voice models (downloaded automatically on first run; one file is too big for GitHub)
+models/
+*.part

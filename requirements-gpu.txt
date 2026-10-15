@@ -1,0 +1,7 @@
+# Optional GPU speed-up (NVIDIA GTX 10xx and newer). Install AFTER requirements.txt:
+#   pip uninstall -y onnxruntime
+#   pip install -r requirements-gpu.txt
+# onnxruntime-gpu 1.27+ needs CUDA 13, which dropped GTX 10xx (Pascal) cards -> stay on 1.26 (CUDA 12).
+onnxruntime-gpu[cuda,cudnn]==1.26.0
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.5.1.17   # newer cuDNN 9 releases fail on Pascal GPUs
